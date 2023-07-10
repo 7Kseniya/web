@@ -1,0 +1,32 @@
+:root{
+    --light-color: #e7dfcf;
+    --dark-color: #2c2d2a;
+    --body-font: "Montserrat", sans-serif;
+}
+body{
+    background-color: var(--light-color);
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .1em;
+
+}
+header a{
+    color: var(--light-color);
+    letter-spacing: .1em;
+    text-decoration: none;
+
+}
+h1{
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: 1.2em;
+}
