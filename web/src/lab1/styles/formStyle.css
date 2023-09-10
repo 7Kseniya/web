@@ -1,0 +1,14 @@
+#input-form {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    width: 8em;
+    margin-top: 10%;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

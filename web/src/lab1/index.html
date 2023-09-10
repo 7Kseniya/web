@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/formStyle.css">
+  <title>first lab</title>
+</head>
+<body>
+<header>
+  <div class="header-menu">
+    <p>Игнатьева Ксения Артемовна</p>
+    <p>P3225</p>
+    <p>вариант №3512</p>
+
+  </div>
+  <div><h1>лабораторная работа №1</h1></div>
+
+  <a href="" class="github">исходный код</a>
+</header>
+
+<div id="content" class="flex-container">
+  <div id="graph">
+    <svg width="300px" height="300px">
+
+      <!--arrows-->
+      <polygon points="150,0 145,10 155,10" stroke="#2c2d2a"></polygon>
+      <polygon points="300,150 290,145 290,155" stroke="#2c2d2a"></polygon>
+      <!--rectangle in 3rd quarters-->
+      <polygon points="50,250 50,150 150,150 150,250" fill="#666b61"></polygon>
+      <!--triangle in 2nd quarters-->
+      <polygon points="150,50 50,150 150,150" fill="#666b61"></polygon>
+
+      <!--circle part in 4th quarters-->
+      <path d="M250,150 A100,100 90 0,1 150,250 L 150,150 Z" fill="#666b61"></path>
+
+
+      <!-- axis -->
+      <line x1="0" x2="300" y1="150" y2="150" stroke="#2c2d2a" ></line>
+      <line x1="150" x2="150" y1="0" y2="300" stroke="#2c2d2a" ></line>
+
+      <!--labels R values onn the axis x -->
+      <line x1="50" x2="50" y1="145" y2="155" stroke="#2c2d2a"></line>
+      <line x1="100" x2="100" y1="145" y2="155" stroke="#2c2d2a"></line>
+      <line x1="200" x2="200" y1="145" y2="155" stroke="#2c2d2a"></line>
+      <line x1="250" x2="250" y1="145" y2="155" stroke="#2c2d2a"></line>
+
+      <!-- labels R values onn the axis y -->
+      <line x1="145" x2="155" y1="50" y2="50" stroke="#2c2d2a"></line>
+      <line x1="145" x2="155" y1="100" y2="100" stroke="#2c2d2a"></line>
+      <line x1="145" x2="155" y1="200" y2="200" stroke="#2c2d2a"></line>
+      <line x1="145" x2="155" y1="250" y2="250" stroke="#2c2d2a"></line>
+
+      <!-- axis labels -->
+      <text x="290" y="140">x</text>
+      <text x="155" y="10">y</text>
+      <!-- R values onn the axis x -->
+      <text x="40" y="138">-R</text>
+      <text x="85" y="138">-R/2</text>
+      <text x="190" y="138">R/2</text>
+      <text x="245" y="138">R</text>
+      <!-- R values onn the axis y -->
+      <text x="162" y="54">R</text>
+      <text x="162" y="104">R/2</text>
+      <text x="162" y="204">-R/2</text>
+      <text x="162" y="254">-R</text>
+
+      <!--point-->
+      <circle id="point" r="4" cx="150" cy="150" fill="black" stroke="white" visibility="hidden"></circle>
+    </svg>
+  </div>
+
+  <form id="input-form">
+    <div id="select-x-value">
+      <label for="x">input x:</label>
+      <input type="text" maxlength="10" id="x" name="x" placeholder="should be in range [-3; 5]" required/>
+    </div>
+
+    <div id="select-y-value">
+      <label>select y:</label>
+      <br>
+      <input type="checkbox" id="y-3" name="y" value="-3">
+      <label for="y-3">-3</label>
+      <input type="checkbox" id="y-2" name="y" value="-2">
+      <label for="y-2">-2</label>
+      <input type="checkbox" id="y-1" name="y" value="-1">
+      <label for="y-1">-1</label>
+      <br>
+      <input type="checkbox" id="y0" name="y" value="0">
+      <label for="y0">0</label>
+      <input type="checkbox" id="y1" name="y" value="1">
+      <label for="y1">1</label>
+      <input type="checkbox" id="y2" name="y" value="2">
+      <label for="y2">2</label>
+      <br>
+      <input type="checkbox" id="y3" name="y" value="3">
+      <label for="y3">3</label>
+      <input type="checkbox" id="y4" name="y" value="4">
+      <label for="y4">4</label>
+      <input type="checkbox" id="y5" name="y" value="5">
+      <label for="y5">5</label>
+    </div>
+
+    <div id="select-r-value">
+      <label >select R</label>
+      <br>
+      <input type="checkbox" id="r1" name="r" value="1">
+      <label for="r1">1</label>
+      <input type="checkbox" id="r2" name="r" value="2">
+      <label for="r2">2</label>
+      <input type="checkbox" id="r3" name="r" value="3">
+      <label for="r3">3</label>
+      <input type="checkbox" id="r4" name="r" value="4">
+      <label for="r4">4</label>
+      <input type="checkbox" id="r5" name="r" value="5">
+      <label for="r5">5</label>
+    </div>
+    <div id="submit-container">
+      <button type="submit" id="submit-btn">submit</button>
+    </div>
+  </form>
+
+  <div id="error"></div>
+
+</div>
+
+
+
+<div id="result-table-container">
+  <table id="result-table">
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>R</th>
+      <th>current time</th>
+      <th>execution time</th>
+      <th>result</th>
+    </tr>
+  </table>
+</div>
+<button type="reset" id="clear-table-btn" onclick="clear()">reset</button>
+
+
+<footer>
+
+</footer>
+<script type="module" src="./actions/validator.js"></script>
+<script type="module" src="./actions/clearTable.js"></script>
+<script type="module" src="./actions/limiter.js"></script>
+</body>
+</html>
