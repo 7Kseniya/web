@@ -1,4 +1,6 @@
 # web
 This repository is intended for publishing web programming assignments for the 3rd semester.
 
-- [1st lab (basics)](https://se.ifmo.ru/~s368231/lab1/index.html) `PHP+JS+CSS`
+[1st lab (basics)](https://se.ifmo.ru/~s368231/lab1/index.html) `PHP+JS+CSS` *yeah I was too lazy to make normal styles
+
+
