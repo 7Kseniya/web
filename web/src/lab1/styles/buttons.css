@@ -18,13 +18,9 @@ button:hover {
 }
 #button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 1em;
 }
 #submit-btn {
-    margin-left: 1em;
-}
-#reset-btn {
     margin-right: 1em;
-    margin-left: 1em;
 }

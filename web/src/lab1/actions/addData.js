@@ -1,5 +1,5 @@
 const table = document.getElementById('result-table');
-export function add(data){
+export function displayResult(data){
     const row = document.createElement('tr');
     row.innerHTML = `
                         <td>${data.x}</td>
