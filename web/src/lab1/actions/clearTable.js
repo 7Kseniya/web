@@ -7,7 +7,7 @@ function clear() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const clearButton = document.getElementById("clear-table-btn");
+    const clearButton = document.getElementById("reset-btn");
     clearButton.addEventListener("click", function () {
         clear();
     });

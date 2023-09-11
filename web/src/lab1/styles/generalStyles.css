@@ -1,11 +1,15 @@
 :root{
     --light-color: #e7dfcf;
     --dark-color: #2c2d2a;
+    --graph-color : #666b61;
     --body-font: "Montserrat", sans-serif;
 }
 body{
     background-color: var(--light-color);
     font-family: var(--body-font);
+    font-size: 1em;
+    letter-spacing: .1em;
+    font-weight: 500;
     color: var(--dark-color);
     margin: 0;
     padding: 0;
@@ -16,9 +20,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    letter-spacing: .1em;
-    padding: 10px 5%;
-
+    padding: 10px 7%;
 }
 header a{
     color: var(--light-color);
@@ -26,43 +28,37 @@ header a{
     text-decoration: none;
 
 }
-h1{
+header p, h1{
     letter-spacing: .1em;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-right: 1em;
+
 }
+
 #graph {
     flex: 1;
-    margin: 3em 10%;
+    margin-right: 3em;
 }
 
-#result-table-container {
-    margin-top: 20px;
-    overflow-x: auto;
-}
-
-#result-table {
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 80%;
-    border-collapse: collapse;
+}
+#content {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 15%;
+
 }
 
-#result-table th,
-#result-table td {
-    border: 1px solid var(--dark-color);
-    padding: 10px;
+footer {
     text-align: center;
-}
-
-#result-table th {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
 
-#result-table tr:nth-child(even) {
-    background-color: var(--light-color);
-}
-
-#result-table tr:nth-child(odd) {
-    background-color: var(--dark-color);
-}
 

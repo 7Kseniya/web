@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/generalStyles.css">
   <link rel="stylesheet" href="styles/formStyle.css">
+  <link rel="stylesheet" href="styles/tableStyle.css">
+  <link rel="stylesheet" href="styles/buttons.css">
   <title>first lab</title>
 </head>
 <body>
@@ -13,11 +15,10 @@
     <p>Игнатьева Ксения Артемовна</p>
     <p>P3225</p>
     <p>вариант №3512</p>
-
   </div>
   <div><h1>лабораторная работа №1</h1></div>
 
-  <a href="" class="github">исходный код</a>
+  <a href="https://github.com/7Kseniya/web/tree/dev" class="github">исходный код</a>
 </header>
 
 <div id="content" class="flex-container">
@@ -86,14 +87,13 @@
       <label for="y-2">-2</label>
       <input type="checkbox" id="y-1" name="y" value="-1">
       <label for="y-1">-1</label>
-      <br>
       <input type="checkbox" id="y0" name="y" value="0">
       <label for="y0">0</label>
       <input type="checkbox" id="y1" name="y" value="1">
       <label for="y1">1</label>
+      <br>
       <input type="checkbox" id="y2" name="y" value="2">
       <label for="y2">2</label>
-      <br>
       <input type="checkbox" id="y3" name="y" value="3">
       <label for="y3">3</label>
       <input type="checkbox" id="y4" name="y" value="4">
@@ -103,7 +103,7 @@
     </div>
 
     <div id="select-r-value">
-      <label >select R</label>
+      <label >select R:</label>
       <br>
       <input type="checkbox" id="r1" name="r" value="1">
       <label for="r1">1</label>
@@ -116,16 +116,16 @@
       <input type="checkbox" id="r5" name="r" value="5">
       <label for="r5">5</label>
     </div>
-    <div id="submit-container">
+    <div id="error"></div>
+    <div id="button-container">
       <button type="submit" id="submit-btn">submit</button>
+      <button type="reset" id="reset-btn" onclick="clear()">reset</button>
     </div>
   </form>
 
-  <div id="error"></div>
+
 
 </div>
-
-
 
 <div id="result-table-container">
   <table id="result-table">
@@ -139,14 +139,14 @@
     </tr>
   </table>
 </div>
-<button type="reset" id="clear-table-btn" onclick="clear()">reset</button>
 
 
-<footer>
 
-</footer>
+<footer></footer>
+
 <script type="module" src="./actions/validator.js"></script>
 <script type="module" src="./actions/clearTable.js"></script>
 <script type="module" src="./actions/limiter.js"></script>
+
 </body>
 </html>
