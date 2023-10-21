@@ -1,22 +1,22 @@
 :root{
     --light-color: #e7dfcf;
-    --dark-color: #2c2d2a;
+    --main-color: #2c2d2a;
     --body-font: "Montserrat", sans-serif;
 }
 body{
     background-color: var(--light-color);
     font-family: var(--body-font);
-    color: var(--dark-color);
+    color: var(--main-color);
     margin: 0;
     padding: 0;
 }
 header {
     padding: 1em;
-    color: var(--dark-color);
+    color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
 }
 
 .container {
@@ -60,11 +60,11 @@ header {
 
 .light-theme {
     background-color: var(--light-color);
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 
 .dark-theme {
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     color: var(--light-color);
 }
 
@@ -115,7 +115,7 @@ header {
     left: -200px;
     width: 200px;
     height: 100vh;
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     transition: left 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -193,11 +193,11 @@ footer {
 /*theme settings*/
 .light-theme {
     background-color: var(--light-color);
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 
 .dark-theme {
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     color: var(--light-color);
 }
 
@@ -206,36 +206,36 @@ footer {
 }
 
 .dark-theme .github-icon svg {
-    fill: var(--dark-color);
+    fill: var(--main-color);
 }
 .light-theme .header{
     color: var(--light-color);
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
 }
 .dark-theme .header{
-    color: var(--dark-color);
+    color: var(--main-color);
     background-color: var(--light-color);
 }
 .light-theme .header-menu a{
     color: var(--light-color);
 }
 .dark-theme .header-menu a{
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 .light-theme .menu-icon-bar{
     background-color: var(--light-color);
 }
 .dark-theme .menu-icon-bar{
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
 }
 .light-theme .theme-toggle{
     background-color: var(--light-color);
 }
 .dark-theme .theme-toggle{
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 .light-theme .sidebar{
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
 }
 .dark-theme .sidebar{
     background-color: var(--light-color);
@@ -244,14 +244,14 @@ footer {
     color: var(--light-color);
 }
 .dark-theme .sidebar a{
-    color: var(--dark-color);
+    color: var(--main-color);
 }
 
 .light-theme .logo {
     background-color: var(--light-color);
 }
 .light-theme .logo {
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
 }
 
 .light-theme .dark-logo {

@@ -1,0 +1,39 @@
+:root{
+    --light-color: #b3aea4;
+    --main-color: #2c2d2a;
+    --graph-color : #666b61;
+    --body-font: "Montserrat", sans-serif;
+}
+
+#result_table {
+    overflow-y: scroll;
+    border-collapse: collapse;
+}
+
+#result_table tr td,
+#result_table tr th {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--body-font);
+    letter-spacing: .1em;
+}
+
+#result_table thead {
+    background-color: var(--graph-color);
+}
+
+#result_table tbody tr:nth-child(odd) {
+    background-color: var(--light-color);
+}
+
+#result_table tbody tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+#result_table thead tr:hover,
+#result_table tbody tr:hover {
+    background-color: var(--graph-color);
+    cursor: pointer;
+}

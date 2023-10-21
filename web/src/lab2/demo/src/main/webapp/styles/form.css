@@ -1,0 +1,74 @@
+:root{
+    --light-color: #b3aea4;
+    --main-color: #2c2d2a;
+    --graph-color : #666b61;
+    --body-font: "Montserrat", sans-serif;
+}
+#form {
+    padding: 15px;
+    background-color: var(--light-color);
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    justify-content: center;
+}
+.form-field {
+    margin-bottom: 3%;
+}
+
+.form-field input[type="text"] {
+    border: 1px solid black;
+    font-size: 85%;
+    border-radius: 6px;
+    width: 18em;
+}
+
+.form-field input[type="radio"] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    appearance: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.form-field input[type="radio"]:checked {
+    background-color: var(--main-color);
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: red;
+}
+
+.form-field.success input {
+    border-color: var(--main-color);
+}
+
+.form-field small {
+    color: red;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+    width: 30%;
+    padding: 1em;
+    margin-left: 0.5em;
+    background: var(--main-color);
+    color: var(--light-color);
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+    outline: none;
+}

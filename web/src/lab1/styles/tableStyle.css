@@ -15,7 +15,7 @@
 
 #result-table th,
 #result-table td {
-    border: 1px solid var(--dark-color);
+    border: 1px solid var(--main-color);
     padding: 10px;
     text-align: center;
     font-weight: 500;
@@ -24,7 +24,7 @@
 }
 
 #result-table th {
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     color: var(--light-color);
 }
 
